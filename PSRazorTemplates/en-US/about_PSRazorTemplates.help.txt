@@ -1,0 +1,11 @@
+PSTOPIC
+    about_PSRazorTemplates
+
+SHORT DESCRIPTION
+    A Powershell module to use Razor templates to generate HTML or other structured text output
+
+LONG DESCRIPTION
+    ** TODO: add text here **
+
+DETAILED DESCRIPTION
+    ** TODO: add text here **

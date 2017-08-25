@@ -21,19 +21,19 @@ ModuleVersion = '0.1.0'
 GUID = '780f1f2f-13f8-47f1-9df8-27dbcb7cdb5b'
 
 # Author of this module
-Author = 'kta7259'
+Author = 'Kelly Adams'
 
 # Company or vendor of this module
-CompanyName = 'Unknown'
+# CompanyName = ''
 
 # Copyright statement for this module
-Copyright = '(c) 2017 kta7259. All rights reserved.'
+Copyright = '(c) 2017 Kelly Adams. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'A Powershell module to use Razor templates to generate HTML or other structured text output'
 
 # Minimum version of the Windows PowerShell engine required by this module
-# PowerShellVersion = ''
+PowerShellVersion = '3.0'
 
 # Name of the Windows PowerShell host required by this module
 # PowerShellHostName = ''
@@ -95,13 +95,13 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+        Tags = @('Razor', 'Templates', 'CSHTML')
 
         # A URL to the license for this module.
-        # LicenseUri = ''
+        LicenseUri = 'https://github.com/adamskt/PSRazorTemplates/blob/master/README.md'
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://github.com/adamskt/PSRazorTemplates'
 
         # A URL to an icon representing this module.
         # IconUri = ''
