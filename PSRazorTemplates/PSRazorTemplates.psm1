@@ -2,7 +2,7 @@
 if (Get-ChildItem "hklm:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\" |
         Get-ItemPropertyValue -Name Release |
         ForEach-Object { $_ -ge 378675 }) {
-            $RazorLightAssemblyPath = Join-path $PSScriptRoot "net451\RazorLight.dll"
+            $RazorLightAssemblyPath = Join-path $PSScriptRoot "net451\*.dll"
 }
 
 #TODO: Test if .Net Core 1.0 (NETSTANDARD 1.6) is installed
