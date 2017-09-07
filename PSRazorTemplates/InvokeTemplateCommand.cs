@@ -2,8 +2,8 @@
 
 namespace PSRazorTemplates
 {
-    [Cmdlet(VerbsLifecycle.Invoke, "Template")]
-    public class InvokeTemplateCommand : Cmdlet
+    [Cmdlet(VerbsLifecycle.Invoke, "RazorTemplate")]
+    public class InvokeRazorTemplateCommand : Cmdlet
     {
         
     }
