@@ -42,7 +42,7 @@ PowerShellVersion = '3.0'
 # PowerShellHostVersion = ''
 
 # Minimum version of Microsoft .NET Framework required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-DotNetFrameworkVersion = '4.6.1'
+# DotNetFrameworkVersion = '4.6'
 
 # Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
 CLRVersion = '4.0'
@@ -55,6 +55,50 @@ CLRVersion = '4.0'
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
+#'bin\Debug\net461\Microsoft.AspNetCore.Html.Abstractions.dll',
+#'bin\Debug\net461\Microsoft.AspNetCore.Razor.dll',
+#'bin\Debug\net461\Microsoft.AspNetCore.Razor.Runtime.dll',
+#'bin\Debug\net461\Microsoft.CodeAnalysis.CSharp.dll',
+#'bin\Debug\net461\Microsoft.CodeAnalysis.dll',
+#'bin\Debug\net461\Microsoft.Extensions.Caching.Abstractions.dll',
+#'bin\Debug\net461\Microsoft.Extensions.Caching.Memory.dll',
+#'bin\Debug\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll',
+#'bin\Debug\net461\Microsoft.Extensions.FileProviders.Abstractions.dll',
+#'bin\Debug\net461\Microsoft.Extensions.FileProviders.Physical.dll',
+#'bin\Debug\net461\Microsoft.Extensions.FileSystemGlobbing.dll',
+#'bin\Debug\net461\Microsoft.Extensions.Options.dll',
+#'bin\Debug\net461\Microsoft.Extensions.Primitives.dll',
+#'bin\Debug\net461\Microsoft.Win32.Primitives.dll',
+#'bin\Debug\net461\RazorLight.dll',
+#'bin\Debug\net461\System.AppContext.dll',
+#'bin\Debug\net461\System.Buffers.dll',
+#'bin\Debug\net461\System.Collections.Immutable.dll',
+#'bin\Debug\net461\System.Console.dll',
+#'bin\Debug\net461\System.Diagnostics.DiagnosticSource.dll',
+#'bin\Debug\net461\System.Diagnostics.FileVersionInfo.dll',
+#'bin\Debug\net461\System.Diagnostics.StackTrace.dll',
+#'bin\Debug\net461\System.Globalization.Calendars.dll',
+#'bin\Debug\net461\System.IO.Compression.dll',
+#'bin\Debug\net461\System.IO.Compression.ZipFile.dll',
+#'bin\Debug\net461\System.IO.FileSystem.dll',
+#'bin\Debug\net461\System.IO.FileSystem.Primitives.dll',
+#'bin\Debug\net461\System.Management.Automation.dll',
+#'bin\Debug\net461\System.Net.Http.dll',
+#'bin\Debug\net461\System.Net.Sockets.dll',
+#'bin\Debug\net461\System.Reflection.Metadata.dll',
+#'bin\Debug\net461\System.Runtime.CompilerServices.Unsafe.dll',
+#'bin\Debug\net461\System.Runtime.InteropServices.RuntimeInformation.dll',
+#'bin\Debug\net461\System.Security.Cryptography.Encoding.dll',
+#'bin\Debug\net461\System.Security.Cryptography.Primitives.dll',
+#'bin\Debug\net461\System.Security.Cryptography.X509Certificates.dll',
+#'bin\Debug\net461\System.Text.Encoding.CodePages.dll',
+#'bin\Debug\net461\System.Text.Encodings.Web.dll',
+#'bin\Debug\net461\System.Threading.Thread.dll',
+#'bin\Debug\net461\System.Xml.ReaderWriter.dll',
+#'bin\Debug\net461\System.Xml.XmlDocument.dll',
+#'bin\Debug\net461\System.Xml.XPath.dll',
+#'bin\Debug\net461\System.Xml.XPath.XDocument.dll'
+# )
 
 # Script files (.ps1) that are run in the caller's environment prior to importing this module.
 # ScriptsToProcess = @()
@@ -66,13 +110,13 @@ CLRVersion = '4.0'
 # FormatsToProcess = @()
 
 # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
-# NestedModules = @()
+NestedModules = @('bin\Debug\net461\PSRazorTemplates.dll')
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = @()
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-CmdletsToExport = 'Invoke-RazorTemplate'
+CmdletsToExport = @('Format-RazorTemplate')
 
 # Variables to export from this module
 # VariablesToExport = '*'

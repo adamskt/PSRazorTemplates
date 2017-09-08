@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Immutable;
 using System.Dynamic;
-using System.IO;
 using System.Linq;
 using System.Management.Automation;
 using System.Management.Automation.Internal;
@@ -15,7 +14,7 @@ namespace PSRazorTemplates
     {
         [Parameter(Mandatory = false, HelpMessage = "The path to the views folder.")]
         [ValidateNotNull]
-        public DirectoryInfo ViewPath { get; set; }
+        public PathInfo ViewPath { get; set; }
 
         [Parameter( ValueFromPipeline = true, HelpMessage = "The ")]
         public PSObject InputObject { get; set; } = AutomationNull.Value;
@@ -35,9 +34,9 @@ namespace PSRazorTemplates
         protected override void BeginProcessing()
         {
             if ( ViewPath == null )
-                ViewPath = new DirectoryInfo( SessionState.Path.CurrentFileSystemLocation.Path );
+                ViewPath = SessionState.Path.CurrentFileSystemLocation;
 
-            _Engine = EngineFactory.CreatePhysical( ViewPath.FullName );
+            _Engine = EngineFactory.CreatePhysical( ViewPath.Path );
 
         }
 
