@@ -25,7 +25,6 @@ namespace PSRazorTemplates
         [Parameter(Position = 0, ParameterSetName = Constants.DefaultParameterSet, HelpMessage = "The name of a Razor file in the specified ViewPath to render the model(s) against.")]
         public string ViewName { get; set; }
 
-
         private IRazorLightEngine _Engine;
 
         private readonly ImmutableList<ExpandoObject>.Builder _ModelListBuilder = ImmutableList.CreateBuilder<ExpandoObject>();

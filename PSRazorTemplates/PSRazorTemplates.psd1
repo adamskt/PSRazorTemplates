@@ -9,7 +9,7 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-# RootModule = 'PSRazorTemplates.psm1'
+RootModule = 'PSRazorTemplates.psm1'
 
 # Version number of this module.
 ModuleVersion = '0.1.0'
@@ -33,7 +33,7 @@ Copyright = '(c) 2017 Kelly Adams. All rights reserved.'
 Description = 'A Powershell module to use Razor templates to generate HTML or other structured text output'
 
 # Minimum version of the Windows PowerShell engine required by this module
-PowerShellVersion = '3.0'
+PowerShellVersion = '5.0'
 
 # Name of the Windows PowerShell host required by this module
 # PowerShellHostName = ''
